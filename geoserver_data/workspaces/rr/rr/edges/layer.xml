@@ -1,0 +1,16 @@
+<layer>
+  <name>edges</name>
+  <id>LayerInfoImpl--495f69f9:1848e8039af:-7ffd</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fe3</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--495f69f9:1848e8039af:-7ffe</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-11-19 06:30:51.695 UTC</dateCreated>
+</layer>

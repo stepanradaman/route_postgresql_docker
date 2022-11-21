@@ -1,0 +1,16 @@
+<layer>
+  <name>nedges_noded_vertices_pgr</name>
+  <id>LayerInfoImpl-16ecdc6a:184143a6950:-7ff9</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-16ecdc6a:184143a6950:-7ffa</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-26 12:26:04.884 UTC</dateCreated>
+</layer>

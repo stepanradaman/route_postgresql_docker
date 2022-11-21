@@ -1,0 +1,79 @@
+<featureType>
+  <id>FeatureTypeInfoImpl-4ed2fe5f:1845c7994bf:-7fee</id>
+  <name>path</name>
+  <nativeName>path</nativeName>
+  <namespace>
+    <id>NamespaceInfoImpl-4ed2fe5f:1845c7994bf:-7ff6</id>
+  </namespace>
+  <title>path</title>
+  <keywords>
+    <string>features</string>
+    <string>path</string>
+  </keywords>
+  <srs>EPSG:4326</srs>
+  <nativeBoundingBox>
+    <minx>-180.0</minx>
+    <maxx>180.0</maxx>
+    <miny>-90.0</miny>
+    <maxy>90.0</maxy>
+    <crs>EPSG:4326</crs>
+  </nativeBoundingBox>
+  <latLonBoundingBox>
+    <minx>-180.0</minx>
+    <maxx>180.0</maxx>
+    <miny>-90.0</miny>
+    <maxy>90.0</maxy>
+    <crs>EPSG:4326</crs>
+  </latLonBoundingBox>
+  <projectionPolicy>FORCE_DECLARED</projectionPolicy>
+  <enabled>true</enabled>
+  <metadata>
+    <entry key="JDBC_VIRTUAL_TABLE">
+      <virtualTable>
+        <name>path</name>
+        <sql>SELECT&#xd;
+ MIN(r.seq) AS seq,&#xd;
+ e.old_id AS id,&#xd;
+ e.name,&#xd;
+ e.type,&#xd;
+ sum(e.distance) AS distance,&#xd;
+ST_Collect(e.the_geom) AS geom &#xd;
+ FROM pgr_dijkstra(&apos;SELECT id,source,target,distance AS cost &#xd;
+ FROM edges_noded&apos;,%source%,%target%,false) AS r,edges_noded AS e &#xd;
+WHERE r.edge=e.id&#xd;
+GROUP BY e.old_id,e.name,e.type
+</sql>
+        <escapeSql>false</escapeSql>
+        <geometry>
+          <name>geom</name>
+          <type>MultiLineString</type>
+          <srid>-1</srid>
+        </geometry>
+        <parameter>
+          <name>source</name>
+          <defaultValue>1</defaultValue>
+          <regexpValidator>^[\d]+$</regexpValidator>
+        </parameter>
+        <parameter>
+          <name>target</name>
+          <defaultValue>2</defaultValue>
+          <regexpValidator>^[\d]+$</regexpValidator>
+        </parameter>
+      </virtualTable>
+    </entry>
+  </metadata>
+  <store class="dataStore">
+    <id>DataStoreInfoImpl-4ed2fe5f:1845c7994bf:-7ff5</id>
+  </store>
+  <serviceConfiguration>false</serviceConfiguration>
+  <simpleConversionEnabled>false</simpleConversionEnabled>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <maxFeatures>0</maxFeatures>
+  <numDecimals>0</numDecimals>
+  <padWithZeros>false</padWithZeros>
+  <forcedDecimal>false</forcedDecimal>
+  <overridingServiceSRS>false</overridingServiceSRS>
+  <skipNumberMatched>false</skipNumberMatched>
+  <circularArcPresent>false</circularArcPresent>
+</featureType>

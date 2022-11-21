@@ -1,0 +1,27 @@
+<layerGroup>
+  <id>LayerGroupInfoImpl--16d811e1:183c67382e2:-7ff4</id>
+  <name>MyAfganistanGroup</name>
+  <mode>SINGLE</mode>
+  <title>MyAfganistanGroup</title>
+  <workspace>
+    <id>WorkspaceInfoImpl--16d811e1:183c67382e2:-7fff</id>
+  </workspace>
+  <internationalTitle/>
+  <internationalAbstract/>
+  <publishables>
+    <published type="layer">
+      <id>LayerInfoImpl--16d811e1:183c67382e2:-7ffb</id>
+    </published>
+  </publishables>
+  <styles>
+    <style/>
+  </styles>
+  <bounds>
+    <minx>-124.73142200000001</minx>
+    <maxx>74.89412689209006</maxx>
+    <miny>24.955967</miny>
+    <maxy>49.371735</maxy>
+    <crs>EPSG:4326</crs>
+  </bounds>
+  <dateCreated>2022-10-11 10:57:57.54 UTC</dateCreated>
+</layerGroup>

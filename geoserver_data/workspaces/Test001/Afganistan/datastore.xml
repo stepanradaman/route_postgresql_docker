@@ -1,0 +1,25 @@
+<dataStore>
+  <id>DataStoreInfoImpl--16d811e1:183c67382e2:-7ffd</id>
+  <name>Afganistan</name>
+  <description>Afganistan</description>
+  <type>Shapefile</type>
+  <enabled>true</enabled>
+  <workspace>
+    <id>WorkspaceInfoImpl--16d811e1:183c67382e2:-7fff</id>
+  </workspace>
+  <connectionParameters>
+    <entry key="charset">UTF-8</entry>
+    <entry key="filetype">shapefile</entry>
+    <entry key="create spatial index">true</entry>
+    <entry key="memory mapped buffer">false</entry>
+    <entry key="timezone">Europe/Moscow</entry>
+    <entry key="enable spatial index">true</entry>
+    <entry key="namespace">Test001</entry>
+    <entry key="cache and reuse memory maps">true</entry>
+    <entry key="skipScan">true</entry>
+    <entry key="url">file://D:\TEST\postgre\Afganistan\AFG_adm0.shp</entry>
+    <entry key="fstype">shape</entry>
+  </connectionParameters>
+  <__default>false</__default>
+  <dateCreated>2022-10-11 10:38:28.318 UTC</dateCreated>
+</dataStore>

@@ -1,0 +1,53 @@
+version: '3.8'
+
+networks:
+  network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.19.0.0/24
+          gateway: 172.19.0.1
+
+services:
+  postgres:
+    image: kartoza/postgis
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: stepan
+      POSTGRES_DB: dbroute
+      ALLOW_IP_RANGE: 0.0.0.0/0
+    ports:
+      - '5431:5432'
+    volumes:
+      - ./init/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./postgres-data:/var/lib/postgresql/data
+    restart: on-failure
+    healthcheck:
+      test: "exit 0"
+    networks:
+      network:
+        ipv4_address: 172.19.0.3
+  geoserver:
+    image: kartoza/geoserver
+    ports:
+      - '8081:8080'
+    volumes:
+      - ./geoserver_data:/opt/geoserver/data_dir
+    restart: on-failure
+    environment:
+      GEOSERVER_ADMIN_USER: admin
+      GEOSERVER_ADMIN_PASSWORD: geoserver
+      ALLOW_IP_RANGE: 0.0.0.0/0
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      network:
+        ipv4_address: 172.19.0.2
+  app:
+    image: route
+    ports:
+      - '3000:3000'
+    networks:
+      network:
+        ipv4_address: 172.19.0.5

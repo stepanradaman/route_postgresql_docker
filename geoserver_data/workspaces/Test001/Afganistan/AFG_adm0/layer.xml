@@ -1,0 +1,23 @@
+<layer>
+  <name>AFG_adm0</name>
+  <id>LayerInfoImpl--16d811e1:183c67382e2:-7ffb</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--16d811e1:183c67382e2:-7ff8</id>
+  </defaultStyle>
+  <styles class="linked-hash-set">
+    <style>
+      <id>StyleInfoImpl--16d811e1:183c67382e2:-7ff8</id>
+    </style>
+  </styles>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl--16d811e1:183c67382e2:-7ffc</id>
+  </resource>
+  <opaque>true</opaque>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-10-11 10:40:39.454 UTC</dateCreated>
+  <dateModified>2022-10-12 12:30:21.410 UTC</dateModified>
+</layer>

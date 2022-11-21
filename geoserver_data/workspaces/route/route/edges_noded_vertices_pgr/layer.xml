@@ -1,0 +1,16 @@
+<layer>
+  <name>edges_noded_vertices_pgr</name>
+  <id>LayerInfoImpl-4ed2fe5f:1845c7994bf:-7ff1</id>
+  <type>VECTOR</type>
+  <defaultStyle>
+    <id>StyleInfoImpl--570ae188:124761b8d78:-7fdf</id>
+  </defaultStyle>
+  <resource class="featureType">
+    <id>FeatureTypeInfoImpl-4ed2fe5f:1845c7994bf:-7ff2</id>
+  </resource>
+  <attribution>
+    <logoWidth>0</logoWidth>
+    <logoHeight>0</logoHeight>
+  </attribution>
+  <dateCreated>2022-11-09 14:12:55.227 UTC</dateCreated>
+</layer>
